@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forgebound — Duel of the Four Suits</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand">FORGE<span>BOUND</span></div>
+    <div id="turn-label" class="turn-label">FORGEBOUND</div>
+    <div class="top-decks"><span id="deck-vex">Deck 30</span><span id="deck-you">Deck 30</span></div>
+    <div class="top-btns">
+      <button id="sound-btn" type="button">SOUND ON</button>
+      <button id="help-btn" type="button">HOW TO PLAY</button>
+      <button id="restart-btn" type="button">RESTART</button>
+    </div>
+  </header>
+
+  <main id="table">
+    <section id="rival-zone" aria-label="Rival"></section>
+    <section id="table-zone" aria-label="Table"></section>
+    <section id="player-zone" aria-label="Your hand"></section>
+  </main>
+
+  <div id="end-turn-row">
+    <button id="end-turn" type="button">END TURN (Space)</button>
+  </div>
+</div>
+<div id="overlay" class="hidden"></div>
+<div id="floaters"></div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
